@@ -15,15 +15,14 @@ The `scripts` directory contains helpers for the codelab. Some of these come fro
 
 - run another cmd with this commands:
 
-- set IMAGE_SIZE=224
-- set ARCHITECTURE="mobilenet_0.50_%IMAGE_SIZE%"
+- `set IMAGE_SIZE=224`
+- `set ARCHITECTURE="mobilenet_0.50_%IMAGE_SIZE%"`
 `
-python -m scripts.retrain --bottleneck_dir=tf_files/bottlenecks --model_dir=tf_files/models/ --how_many_training_steps 8000 --learning_rate 0.005 --summaries_dir=tf_files/training_summaries/"%ARCHITECTURE%" --output_graph=tf_files/retrained_graph.pb --output_labels=tf_files/retrained_labels.txt --architecture="%ARCHITECTURE%" --image_dir=tf_files/tactile_photos
-`
+- `python -m scripts.retrain --bottleneck_dir=tf_files/bottlenecks --model_dir=tf_files/models/ --how_many_training_steps 8000 --learning_rate 0.005 --summaries_dir=tf_files/training_summaries/"%ARCHITECTURE%" --output_graph=tf_files/retrained_graph.pb --output_labels=tf_files/retrained_labels.txt --architecture="%ARCHITECTURE%" --image_dir=tf_files/tactile_photos`
 
-- modify summaries_dir for project name
-- decrease --learning_rate for more accuracy
-- increase --how_many_training_steps for more accuracy
+modify summaries_dir for project name
+decrease --learning_rate for more accuracy
+increase --how_many_training_steps for more accuracy
 
 Distortions (for better or worse training accuracy) 
 `--random_crop`
