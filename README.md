@@ -25,11 +25,11 @@ python -m scripts.retrain --bottleneck_dir=tf_files/bottlenecks --model_dir=tf_f
 - decrease --learning_rate for more accuracy
 - increase --how_many_training_steps for more accuracy
 
-Distortions (for better or worse training accuracy): 
+Distortions (for better or worse training accuracy) 
 `--random_crop`
 `--random_scale`
 `--random_brightness`(start with values from 5 to 10)
-`--flip_left_right (flips images horizontally at random)``
+`--flip_left_right (flips images horizontally at random)`
 
 `--print_misclassified_test_images`(tests misclassified images at the end)
 
