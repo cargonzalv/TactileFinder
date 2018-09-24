@@ -8,3 +8,13 @@ local.properties
 android.iml
 .gradle/
 android/assets/*
+node_modules
+dist*
+.cache
+yarn-error.log
+*.tgz
+*-ubyte
+*.pyc
+.yalc
+.DS_STORE
+yalc.lock
