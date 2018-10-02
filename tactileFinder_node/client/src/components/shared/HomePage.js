@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 import './HomePage.css';
 
 const styles = theme => ({
@@ -35,13 +36,24 @@ handleChange = (name) => event => {
     });
   };
 
+uploadImage = (name) => event => {
+    this.setState({
+      name: event.target.value,
+    });
+  };
+
+searchImage = (name) => event => {
+    this.setState({
+      name: event.target.value,
+    });
+  };
 	render() {
 		const { classes } = this.props;
 		return (
     <div className={classes.root}>
       <Grid container spacing={24}>
       <Grid item xs={1}>
-        </Grid>
+       </Grid>
         <Grid item xs={10}>
           <Paper className={classes.paper}>
           <Grid item xs={12}>
@@ -53,7 +65,7 @@ handleChange = (name) => event => {
           <Grid item xs={12}>
           <TextField
           id="outlined-name"
-          style={{ margin: 3 }}
+          style={{ margin: 1 }}
           label="Search for your image"
           className={classes.textField}
           fullWidth
@@ -63,6 +75,28 @@ handleChange = (name) => event => {
           variant="outlined"
           />
           </Grid>
+          <Grid container spacing={24}>
+          	<Grid item xs={6}>
+          		<Button id="searchButton" 
+          		variant="contained" 
+          		color="primary" 
+          		className={classes.button} 
+          		fullWidth={true}
+          		onClick={this.searchImage}>
+        		Search for a tactile graph
+      			</Button>
+      		</Grid>
+      		<Grid item xs={6}>
+      			<Button id="uploadButton" 
+      			variant="contained" 
+      			color="primary" 
+      			className={classes.button} 
+      			fullWidth={true}
+      			onClick={this.uploadImage}>
+      			Upload your image
+      			</Button>
+      		</Grid>
+     	  </Grid>
           <Grid item xs={12}>
             <Typography id="subheading" variant="title" align="center" color="textSecondary" paragraph>
               Making more content and information available to blind people through magic*
