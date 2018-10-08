@@ -100,7 +100,7 @@ searchImage = (name) => event => {
      	  </Grid>
           <Grid item xs={12}>
             <Typography id="subheading" variant="title" align="center" color="textSecondary" paragraph>
-              Making more content and information available to blind people through magic*
+              Making more tactile graphs available to blind people through magic*
             </Typography>
           </Grid>
           <Grid item xs={12}>
