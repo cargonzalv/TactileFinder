@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import './HomePage.css';
+import ImageGrid from './ImageGrid'
 
 const styles = theme => ({
   root: {
@@ -20,7 +21,7 @@ const styles = theme => ({
    textField: {
     marginLeft: theme.spacing.unit,
     marginRight: theme.spacing.unit,
-  }
+  },
 });
 
 
@@ -51,8 +52,8 @@ searchImage = (name) => event => {
 		const { classes } = this.props;
 		return (
     <div className={classes.root}>
-      <Grid container spacing={24}>
-      <Grid item xs={1}>
+      <Grid container >
+      <Grid className="specialGrid" item xs={1}>
        </Grid>
         <Grid item xs={10}>
           <Paper className={classes.paper}>
@@ -77,17 +78,7 @@ searchImage = (name) => event => {
           </Grid>
           <Grid container spacing={24}>
           	<Grid item xs={6}>
-          		<Button id="searchButton" 
-          		variant="contained" 
-          		color="primary" 
-          		className={classes.button} 
-          		fullWidth={true}
-          		onClick={this.searchImage}>
-        		Search for a tactile graph
-      			</Button>
-      		</Grid>
-      		<Grid item xs={6}>
-      			<Button id="uploadButton" 
+          		<Button id="uploadButton" 
       			variant="contained" 
       			color="primary" 
       			className={classes.button} 
@@ -96,15 +87,38 @@ searchImage = (name) => event => {
       			Upload your image
       			</Button>
       		</Grid>
+      		<Grid item xs={6}>
+      		<Button id="searchButton" 
+          		variant="contained" 
+          		color="primary" 
+          		className={classes.button} 
+          		fullWidth={true}
+          		onClick={this.searchImage}>
+        		Search for a tactile graph
+      			</Button>
+      		</Grid>
      	  </Grid>
           <Grid item xs={12}>
             <Typography id="subheading" variant="title" align="center" color="textSecondary" paragraph>
               Making more content and information available to blind people through magic*
             </Typography>
           </Grid>
+          <Grid item xs={12}>
+          	<ImageGrid/>
+
+
+
+
+            <Typography id="subheading" variant="title" align="center" color="textSecondary" paragraph>
+              Examples of good images to upload
+            </Typography>
+
+
+
+          </Grid>
           </Paper>
         </Grid>
-        <Grid item xs={1}>
+        <Grid className="specialGrid" item xs={1}>
         </Grid>
       </Grid>
     </div>
