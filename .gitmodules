@@ -1,0 +1,6 @@
+[submodule "tactileFinderBrowser"]
+	path = tactileFinderBrowser
+	url = https://github.com/cegonzalv/tactileFinderBrowser.git
+[submodule "tactile_finder_python"]
+	path = tactile_finder_python
+	url = https://github.com/cegonzalv/tactile_finder_python.git
