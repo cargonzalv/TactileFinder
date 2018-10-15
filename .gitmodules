@@ -4,3 +4,6 @@
 [submodule "tactile_finder_python"]
 	path = tactile_finder_python
 	url = https://github.com/cegonzalv/tactile_finder_python.git
+[submodule "tactileFinderNode"]
+	path = tactileFinderNode
+	url = https://github.com/cegonzalv/tactileFinderNode.git
