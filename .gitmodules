@@ -7,3 +7,6 @@
 [submodule "tactileFinderNode"]
 	path = tactileFinderNode
 	url = https://github.com/cegonzalv/tactileFinderNode.git
+[submodule "tactileFinderClient"]
+	path = tactileFinderClient
+	url = https://github.com/cegonzalv/tactileFinderClient
