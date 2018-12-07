@@ -8,6 +8,6 @@ The Tactile Finder Project is aimed to help visually impaired people find images
 
 1. tactile_finder_python: Tensorflow model running on Python. Based on the tensorflow for Poets example, using mobilenet for transfer learning. First basic iteration, works only on terminal. 90% accuracy
 
-2. tactileFinderBrowser: TensorflowJS model training and running purely on the browser. No backend. Uses OpenGL (so it uses graphics card for processing).
+2. tactileFinderBrowser: TensorflowJS model training and running purely on the browser. No backend. Uses OpenGL (so it uses graphics card for processing). Pretty accurate and fast, but lags the UI a lot. Discarded at the moment.
 
-3. tactileFinderNode: TensorflowJS model running on node and a react frontend. This is gonna be the final version of the project.
+3. tactileFinderNode: Current and Main Project, TensorflowJS model running on cloud functions and a react frontend. This is the final version of the project.
