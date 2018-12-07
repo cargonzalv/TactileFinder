@@ -11,3 +11,5 @@ The Tactile Finder Project is aimed to help visually impaired people find images
 2. tactileFinderBrowser: TensorflowJS model training and running purely on the browser. No backend. Uses OpenGL (so it uses graphics card for processing). Pretty accurate and fast, but lags the UI a lot. Discarded at the moment.
 
 3. tactileFinderNode: Current and Main Project, TensorflowJS model running on cloud functions and a react frontend. This is the final version of the project.
+
+4. tactileFinderClient: ReactJS front-end for the node project.
