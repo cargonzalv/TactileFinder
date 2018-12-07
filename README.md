@@ -1,6 +1,6 @@
 # Tactile Finder
 
-This repo contains different iterations for the [Tactile Finder project](https://tactiled.firebaseapp.com)
+This repo contains different iterations for [Tactiled](https://tactiled.firebaseapp.com), a tool made to test the quality of an image to be used as a tactile graphic. We developed and trained a Machine Learning model that determines the quality of an image that will be transformed to a tactile graphic, by evaluating the facility for a blind person to understand its content
 
 The Tactile Finder Project is aimed to help visually impaired people find images that are optimal to be transformed to Tactile Graphics.
 
